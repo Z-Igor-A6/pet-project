@@ -20,6 +20,7 @@ const server = http.createServer((req, res) => {
   // 2. ОТДАЕМ НАШ JSON
   res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
 
+  //todo: Одавать данные через 40 сек
   const apiResponse = {
     status: "success",
     message: "Данные успешно получены",
